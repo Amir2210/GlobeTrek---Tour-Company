@@ -1,9 +1,11 @@
+import { GlobeTrekIndex } from './pages/GlobeTrekIndex';
+
 export function RootCmp() {
 
   return (
-    <>
-      <h1>REACT APP</h1>
-    </>
+    <main className='main-layout'>
+      <GlobeTrekIndex />
+    </main>
   )
 }
 
