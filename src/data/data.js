@@ -2,6 +2,8 @@ import tour1 from '../assets/imgs/tour-1.jpeg';
 import tour2 from '../assets/imgs/tour-2.jpeg';
 import tour3 from '../assets/imgs/tour-3.jpeg';
 import tour4 from '../assets/imgs/tour-4.jpeg';
+import tour5 from '../assets/imgs/tour-5.jpg';
+import tour6 from '../assets/imgs/tour-6.jpg';
 
 
 export const tours = [
@@ -44,5 +46,25 @@ export const tours = [
     location: 'kenya',
     duration: 20,
     cost: 3300,
+  },
+  {
+    id: 5,
+    image: tour5,
+    date: 'may 10th, 2021',
+    title: 'Spectacular Santorini',
+    info: `Indulge in the mesmerizing beauty of Santorini with our Spectacular Santorini tour. Explore the charming white-washed villages, witness breathtaking sunsets over the Aegean Sea, and immerse yourself in the rich history and culture of this Greek island paradise. From the iconic blue-domed churches to the crystal-clear waters, this tour offers an enchanting experience in one of the most picturesque destinations in the Mediterranean.`,
+    location: 'greece',
+    duration: 7,
+    cost: 2800,
+  },
+  {
+    id: 6,
+    image: tour6,
+    date: 'june 28th, 2021',
+    title: 'Enchanting Kyoto',
+    info: `Step into the magical world of Kyoto with our Enchanting Kyoto tour. Discover the elegance of traditional tea ceremonies, stroll through enchanting bamboo groves, and admire the beauty of ancient temples and cherry blossoms. This journey captures the essence of Japan's cultural heritage, offering a serene escape into the timeless allure of Kyoto's landscapes and historic landmarks.`,
+    location: 'japan',
+    duration: 9,
+    cost: 3200,
   },
 ];
