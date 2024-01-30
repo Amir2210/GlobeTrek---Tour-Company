@@ -1,6 +1,6 @@
 export function Services() {
   return (
-    <section className='services main-layout full'>
+    <section className='services main-layout full' id='services'>
       <h1>our <span className='colored'>services</span> </h1>
       <div className='boxes'>
         <div className="box box1">

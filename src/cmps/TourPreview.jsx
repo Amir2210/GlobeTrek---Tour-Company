@@ -2,8 +2,9 @@ export function TourPreview({ tour }) {
   return (
     <li key={tour.id} className='tour-preview'>
       <div className='tour-card'>
-        <div className="img">
+        <div className="img-date">
           <img src={tour.image} alt="" />
+          <div className='date'>{tour.date}</div>
         </div>
         <div className="content">
           <h3>{tour.title}</h3>

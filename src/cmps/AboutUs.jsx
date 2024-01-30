@@ -1,7 +1,7 @@
 import aboutImage from '../assets/imgs/about.jpeg';
 export function AboutUs() {
   return (
-    <section className='about-us'>
+    <section className='about-us' id='about'>
       <h1>About <span className='colored'>Us</span> </h1>
       <div className='img-content'>
         <div className='img'>
