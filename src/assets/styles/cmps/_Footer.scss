@@ -1,0 +1,62 @@
+.main-footer {
+  text-align: center;
+  background-color: $clr-primary-5;
+  margin-block-start: 100px;
+  padding: 2rem;
+
+  .nav-links {
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 10px;
+
+      li a {
+        letter-spacing: 4px;
+        color: $clr-white;
+        transition: color 0.4s ease-in;
+
+        &:hover {
+          color: $clr-primary-5;
+        }
+      }
+    }
+  }
+
+  .nav-icons {
+    margin-block-end: 25px;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 15px;
+
+      li {
+        font-size: 1.2rem;
+
+        &>a {
+          transition: all 0.5s;
+          color: $clr-white;
+        }
+
+        &.facebook a:hover {
+          color: $facebook-clr
+        }
+
+        &.twitter a:hover {
+          color: $twitter-clr;
+        }
+
+        &.instagram a:hover {
+          color: $instagram-clr;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    color: $clr-white;
+    letter-spacing: 4px;
+  }
+}
