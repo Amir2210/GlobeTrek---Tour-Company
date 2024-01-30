@@ -1,3 +1,4 @@
+import { AboutUs } from '../cmps/AboutUs';
 import { Hero } from '../cmps/Hero';
 import { MainHeader } from '../cmps/MainHeader';
 
@@ -6,6 +7,7 @@ export function GlobeTrekIndex() {
     <>
       <MainHeader />
       <Hero />
+      <AboutUs />
     </>
   )
 }
