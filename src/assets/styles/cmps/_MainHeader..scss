@@ -1,6 +1,9 @@
 .main-header {
   box-shadow: #0000001f 0 3px 12px;
-  padding: 1rem;
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  background-color: $clr-white;
 
   .main-nav {
     display: flex;
