@@ -2,7 +2,8 @@ import { AboutUs } from '../cmps/AboutUs';
 import { Hero } from '../cmps/Hero';
 import { MainHeader } from '../cmps/MainHeader';
 import { Services } from '../cmps/Services';
-
+import { ToursList } from '../cmps/ToursList';
+import { tours } from '../data/data.js'
 export function GlobeTrekIndex() {
   return (
     <>
@@ -10,6 +11,7 @@ export function GlobeTrekIndex() {
       <Hero />
       <AboutUs />
       <Services />
+      <ToursList tours={tours} />
     </>
   )
 }
