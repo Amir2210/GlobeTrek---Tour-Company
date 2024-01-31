@@ -1,11 +1,18 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { GlobeTrekIndex } from './pages/GlobeTrekIndex';
+import { TourDetail } from './pages/TourDetail';
 
 export function RootCmp() {
-
   return (
-    <main className='main-layout'>
-      <GlobeTrekIndex />
-    </main>
-  )
+    <Router>
+      <main className='main-layout'>
+        <Routes>
+          <Route path='/' element={<GlobeTrekIndex />} />
+        </Routes>
+        <Routes>
+          <Route path='/tour/:tourId' element={<TourDetail />} />
+        </Routes>
+      </main>
+    </Router>
+  );
 }
-

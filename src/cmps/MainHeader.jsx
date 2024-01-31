@@ -2,7 +2,7 @@ export function MainHeader() {
   return (
     <header className='main-header full main-layout'>
       <nav className='main-nav'>
-        <div className="nav-logo"><h2>Globe<span className='colored-logo'>Trek</span></h2></div>
+        <div className="nav-logo"><a href="#home"> <h2>Globe<span className='colored-logo'>Trek</span></h2> </a> </div>
         <div className='nav-links'>
           <ul>
             <li><a href="#home">Home</a></li>

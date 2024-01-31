@@ -1,4 +1,7 @@
-.tour-preview {
+.tour-detail-content {
+  max-width: 500px;
+  margin: 50px auto 0 auto;
+
   .tour-card {
     cursor: pointer;
     background-color: $clr-grey-10;
@@ -53,6 +56,25 @@
           color: $clr-primary-5;
         }
       }
+    }
+  }
+
+  .back-btn {
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    cursor: pointer;
+    padding: 16px 32px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background-color: $clr-primary-6;
+    color: $clr-white;
+    border: none;
+    transition: all 0.5s;
+
+    &:hover {
+      color: $clr-primary-1;
+      background-color: $clr-primary-8;
     }
   }
 }
