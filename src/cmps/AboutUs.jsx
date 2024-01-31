@@ -11,7 +11,7 @@ export function AboutUs() {
           <h2>Explore The Difference</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quisquam harum nam cumque temporibus explicabo dolorum sapiente odio unde dolor?</p>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quisquam harum nam cumque temporibus explicabo dolorum sapiente odio unde dolor?</p>
-          <button className='content-btn'>read more</button>
+          <a href="#home"><button className='content-btn'>read more</button></a>
         </div>
       </div>
     </section>
