@@ -47,10 +47,10 @@ export function MainHeader() {
         <div className={isNavOpen ? 'nav-links nav-open' : 'nav-links'}>
           {location.pathname === '/' ? (
             <ul>
-              <li onClick={toggleNav}><a href="#home">Home</a></li>
-              <li onClick={toggleNav}><a href="#about">About</a></li>
-              <li onClick={toggleNav}><a href="#services">Services</a></li>
-              <li onClick={toggleNav}><a href="#tours">Tours</a></li>
+              <li onClick={isNavOpen ? toggleNav : null}><a href="#home">Home</a></li>
+              <li onClick={isNavOpen ? toggleNav : null}><a href="#about">About</a></li>
+              <li onClick={isNavOpen ? toggleNav : null}><a href="#services">Services</a></li>
+              <li onClick={isNavOpen ? toggleNav : null}><a href="#tours">Tours</a></li>
             </ul>
           ) : (
             null
