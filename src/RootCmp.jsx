@@ -8,8 +8,6 @@ export function RootCmp() {
       <main className='main-layout'>
         <Routes>
           <Route path='/' element={<GlobeTrekIndex />} />
-        </Routes>
-        <Routes>
           <Route path='/tour/:tourId' element={<TourDetail />} />
         </Routes>
       </main>

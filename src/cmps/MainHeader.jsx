@@ -1,8 +1,24 @@
+import { Link, useLocation } from "react-router-dom"
 export function MainHeader() {
+  const location = useLocation();
   return (
     <header className='main-header full main-layout'>
       <nav className='main-nav'>
-        <div className="nav-logo"><a href="#home"> <h2>Globe<span className='colored-logo'>Trek</span></h2> </a> </div>
+        {location.pathname === '/' ? (
+          <div className="nav-logo">
+            <a href="#home">
+              <h2>Globe<span className='colored-logo'>Trek</span></h2>
+            </a>
+          </div>
+        ) : (
+          <Link to='/'>
+            <div className="nav-logo">
+              <h2>
+                Globe<span className='colored-logo'>Trek</span>
+              </h2>
+            </div>
+          </Link>
+        )}
         <div className='nav-links'>
           <ul>
             <li><a href="#home">Home</a></li>
