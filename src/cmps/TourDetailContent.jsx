@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom"
+import { useEffect } from "react"
+
 export function TourDetailContent({ tour }) {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section className='tour-detail-content'>
       <div className='tour-card'>
