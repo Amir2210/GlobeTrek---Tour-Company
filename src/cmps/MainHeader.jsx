@@ -1,9 +1,34 @@
+import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from "react-router-dom"
 export function MainHeader() {
+
+  const [isNavOpen, setIsNavOpen] = useState(false)
+  const [isOverlayVisible, setIsOverlayVisible] = useState(false);
+  const navRef = useRef(null)
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside)
+    return () => {
+      document.removeEventListener('click', handleClickOutside)
+    }
+  }, [])
+
+  const handleClickOutside = (event) => {
+    if (navRef.current && !navRef.current.contains(event.target)) {
+      setIsNavOpen(false)
+      setIsOverlayVisible(false)
+    }
+  }
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen)
+    setIsOverlayVisible(!isNavOpen)
+  }
+
   const location = useLocation();
   return (
     <header className='main-header full main-layout'>
-      <nav className='main-nav'>
+      <nav ref={navRef} className='main-nav'>
         {location.pathname === '/' ? (
           <div className="nav-logo">
             <a href="#home">
@@ -19,13 +44,13 @@ export function MainHeader() {
             </div>
           </Link>
         )}
-        <div className='nav-links'>
+        <div className={isNavOpen ? 'nav-links nav-open' : 'nav-links'}>
           {location.pathname === '/' ? (
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#tours">Tours</a></li>
+              <li onClick={toggleNav}><a href="#home">Home</a></li>
+              <li onClick={toggleNav}><a href="#about">About</a></li>
+              <li onClick={toggleNav}><a href="#services">Services</a></li>
+              <li onClick={toggleNav}><a href="#tours">Tours</a></li>
             </ul>
           ) : (
             null
@@ -50,7 +75,16 @@ export function MainHeader() {
             </li>
           </ul>
         </div>
+        {location.pathname === '/' ? (
+          <div className='btn-toggle-menu' onClick={toggleNav}>
+            <div className="bar1"></div>
+            <div className="bar2"></div>
+            <div className="bar3"></div>
+          </div>) : null}
       </nav>
+      {isOverlayVisible && (
+        <div className={`overlay ${isOverlayVisible ? 'visible' : ''}`} onClick={toggleNav}></div>
+      )}
     </header>
   )
 }
