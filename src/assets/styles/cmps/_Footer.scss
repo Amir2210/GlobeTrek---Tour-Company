@@ -3,6 +3,8 @@
   background-color: $clr-primary-5;
   margin-block-start: 100px;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
 
   .nav-links {
     ul {
@@ -58,5 +60,12 @@
   .copyright {
     color: $clr-white;
     letter-spacing: 4px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .main-footer {
+    padding: 20px;
   }
 }

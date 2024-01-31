@@ -1,6 +1,10 @@
 .tour-preview {
+
   .tour-card {
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background-color: $clr-grey-10;
     box-shadow: #0000001f 0 3px 12px;
     transition: all 0.4s;
@@ -15,6 +19,7 @@
 
       img {
         aspect-ratio: 16 /9;
+        width: 100%;
       }
 
       .date {
@@ -29,6 +34,7 @@
     }
 
     .content {
+      flex: 10;
       padding: 1rem;
 
       h3 {

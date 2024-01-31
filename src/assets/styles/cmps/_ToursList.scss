@@ -16,8 +16,24 @@
     list-style: none;
     display: grid;
     padding: 0;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 30px;
 
+  }
+}
+
+@media (max-width: 1400px) {
+  .tours-list-section {
+    .tours-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .tours-list-section {
+    .tours-list {
+      grid-template-columns: 1fr;
+    }
   }
 }

@@ -71,3 +71,18 @@
     }
   }
 }
+
+@media (max-width: 1150px) {
+  .about-us {
+
+    .img-content {
+      grid-template-columns: 1fr;
+
+      .content {
+        h2 {
+          margin-block-start: 10px;
+        }
+      }
+    }
+  }
+}

@@ -52,3 +52,33 @@
     }
   }
 }
+
+@media (max-width: 1150px) {
+  .services {
+    h1 {
+      margin: 40px 0;
+    }
+
+    .boxes {
+      flex-direction: column;
+      margin-block-end: 20px;
+
+      .box {
+        flex-direction: column;
+        margin: 20px 0;
+
+        .icon {
+          margin-block-end: 10px;
+        }
+
+        .content {
+          text-align: center;
+
+          h3 {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}

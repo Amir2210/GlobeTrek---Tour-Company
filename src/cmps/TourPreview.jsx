@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 export function TourPreview({ tour }) {
 
   return (
-    <Link to={`/tour/${tour.id}`}>
-      <li key={tour.id} className='tour-preview'>
+    <Link className='tour-preview' to={`/tour/${tour.id}`}>
+      <li key={tour.id} >
         <div className='tour-card'>
           <div className="img-date">
             <img src={tour.image} alt="" />
