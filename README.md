@@ -1,3 +1,6 @@
+Link to the Website - https://globetrek.netlify.app/
+
+
 🎋 Intro:
 This project is a web application designed to help users plan and discover their next adventure trek. Users can explore various destinations, view details about each trek, and access helpful resources for planning their journey.
 
